@@ -1,0 +1,21 @@
+2020-05-05 16:31:05,272 - qlogging - INFO - running main.py
+2020-05-05 16:31:05,272 - qlogging - INFO - qlogging
+2020-05-05 16:31:05,273 - qlogging.dosomething - INFO - initiating dosomething module
+2020-05-05 16:31:05,273 - qlogging.dosomething - INFO - running add_numbers function
+2020-05-05 16:31:05,273 - qlogging.dosomething - INFO - 2,3
+2020-05-05 16:31:05,273 - qlogging.dosomethingelse - INFO - running subtract_numbers function
+2020-05-05 16:31:05,273 - qlogging.dosomethingelse - INFO - 2,3
+2020-05-06 10:02:27,946 - qlogging - INFO - running main.py
+2020-05-06 10:02:27,946 - qlogging - INFO - qlogging
+2020-05-06 10:02:27,947 - qlogging.dosomething - INFO - initiating dosomething module
+2020-05-06 10:02:27,947 - qlogging.dosomething - INFO - running add_numbers function
+2020-05-06 10:02:27,948 - qlogging.dosomething - INFO - 2,3
+2020-05-06 10:02:27,948 - qlogging.dosomethingelse - INFO - running subtract_numbers function
+2020-05-06 10:02:27,948 - qlogging.dosomethingelse - INFO - 2,3
+2020-05-06 10:02:41,229 - qlogging - INFO - running main.py
+2020-05-06 10:02:41,230 - qlogging - INFO - qlogging
+2020-05-06 10:02:41,232 - qlogging.dosomething - INFO - initiating dosomething module
+2020-05-06 10:02:41,232 - qlogging.dosomething - INFO - running add_numbers function
+2020-05-06 10:02:41,232 - qlogging.dosomething - INFO - 2,3
+2020-05-06 10:02:41,232 - qlogging.dosomethingelse - INFO - running subtract_numbers function
+2020-05-06 10:02:41,232 - qlogging.dosomethingelse - INFO - 2,3
