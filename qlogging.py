@@ -8,12 +8,12 @@ import logging
 # Create a custom logger
 class qlogging():
 
-    def __init__(self, process_name=__name__):
+    def __init__(self, process_name):
 
         """Initiate the Quotient logging module
         Add a default handler that prints to stderr"""
 
-        self.logger = logging.getLogger(process_name)
+        self.logger = logging.getLogger(__name__+'.'+process_name)
         self.logger.setLevel(logging.DEBUG)
 
         # Create handlers

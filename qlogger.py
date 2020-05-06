@@ -3,4 +3,4 @@
 
 import logging
 from qlogging import qlogging
-qlogger = qlogging()
+qlogger = qlogging('PIQ+')
