@@ -1,6 +1,6 @@
 from qlogger import qlogger
 
-qlogger.set_level_display('WARNING')
+qlogger.set_level_display('INFO')
 qlogger.set_log_file('temp.log')
 qlogger.create_timed_rotating_log('PIQ+')
 logger = qlogger.logger
