@@ -46,10 +46,16 @@ class qlogging():
 
         level = level.upper()
 
-        if level=='WARNING':
-            loglevel = logging.WARNING
-        elif level=='DEBUG':
+        if level=='DEBUG':
             loglevel = logging.DEBUG
+        elif level=='INFO':
+            loglevel = logging.INFO
+        elif level=='WARNING':
+            loglevel = logging.WARNING
+        elif level=='ERROR':
+            loglevel = logging.ERROR
+        elif level=='CRITICAL':
+            loglevel = logging.CRITICAL
 
         self.logger.handlers[0].setLevel(loglevel)
 

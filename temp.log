@@ -124,3 +124,9 @@
 2020-05-06 12:05:33,045 - qlogging.dosomething - INFO - 2,3
 2020-05-06 12:05:33,045 - qlogging.dosomethingelse - INFO - running subtract_numbers function
 2020-05-06 12:05:33,045 - qlogging.dosomethingelse - INFO - 2,3
+2020-05-06 13:45:13,418 - qlogging - INFO - running main.py
+2020-05-06 13:45:13,420 - qlogging.dosomething - INFO - initiating dosomething module
+2020-05-06 13:45:13,421 - qlogging.dosomething - INFO - running add_numbers function
+2020-05-06 13:45:13,421 - qlogging.dosomething - INFO - 2,3
+2020-05-06 13:45:13,421 - qlogging.dosomethingelse - INFO - running subtract_numbers function
+2020-05-06 13:45:13,421 - qlogging.dosomethingelse - INFO - 2,3
