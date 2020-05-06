@@ -12,3 +12,5 @@
 * Why don't I just log everything to stderr and write to a log file at the end? This prevents the need to pass a logger object, pre-configured to write to a file. 1) While in development it is easy to forget writing to stderr. 2) Seems like there is no easy command to write stderr to file? (from within IDE like Jupyter)
 
 * Why not have a fixed logging configuration that is imported each time? Well, This config is stored in a central location and not customizable from within the project code, at least not easily. On the flip side, it carries the same issues as passing a logger object around. Only in this case, you are importing it from a central location instead of configuring it on the go.
+
+* bash script.sh | tee -a temp.log
