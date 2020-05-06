@@ -1,0 +1,7 @@
+[user]
+	name = Anvesh Kollu
+	email = mail.anvesh@gmail.com
+	username = kanvesh
+	excludesfile = ~/.gitignore
+[github]
+	user = kanvesh
