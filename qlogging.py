@@ -22,7 +22,7 @@ class qlogging():
         c_handler.setLevel(logging.DEBUG)
 
         # Create formatters and add it to handlers
-        self.stdout_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+        self.stdout_format = logging.Formatter('%(message)s')
         c_handler.setFormatter(self.stdout_format)
 
         # Add handlers to the logger
