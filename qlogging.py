@@ -4,16 +4,17 @@
 
 
 import logging
+from logging.handlers import TimedRotatingFileHandler
 
 # Create a custom logger
 class qlogging():
 
-    def __init__(self, process_name):
+    def __init__(self, process_name=__name__):
 
         """Initiate the Quotient logging module
         Add a default handler that prints to stderr"""
 
-        self.logger = logging.getLogger(__name__+'.'+process_name)
+        self.logger = logging.getLogger(process_name)
         self.logger.setLevel(logging.DEBUG)
 
         # Create handlers
@@ -39,3 +40,26 @@ class qlogging():
         self.logger.addHandler(f_handler)
 
         return None
+    def set_level_display(self, level='DEBUG'):
+
+        """This function sets level of stderr that is displayed"""
+
+        level = level.upper()
+
+        if level=='WARNING':
+            loglevel = logging.WARNING
+        elif level=='DEBUG':
+            loglevel = logging.DEBUG
+
+        self.logger.handlers[0].setLevel(loglevel)
+
+
+    def create_timed_rotating_log(self, path='temp.log'):
+
+        """Creates a new log every day by default. Time period is changeable."""
+
+        time_handler = TimedRotatingFileHandler(path,
+                                           when="s",
+                                           interval=1,
+                                           backupCount=5)
+        self.logger.addHandler(time_handler)
