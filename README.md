@@ -1,4 +1,4 @@
-# python_logging_test
+# Testing a logger module for an internal team
 
 Testing a logging system that works when a program works with multiple internal libraries.
 
