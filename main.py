@@ -1,3 +1,6 @@
+# This is the dummy application's main function.
+# Testing the logging functionality from out here
+
 from qlogger import qlogger
 
 qlogger.set_level_display('INFO')

@@ -1,3 +1,6 @@
+# This is the another dummy application's main function.
+# Testing to see the functionality works if run in parallel
+
 from qlogger import qlogger
 
 qlogger.set_level_display('WARNING')
