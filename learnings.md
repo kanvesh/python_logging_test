@@ -1,4 +1,4 @@
-The default for StreamHandler is stderr
+* The default for StreamHandler is stderr
 
 
 This from https://lincolnloop.com/blog/django-logging-right-way/    
