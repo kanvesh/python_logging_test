@@ -1,3 +1,6 @@
+#This is a dummy module that is called by the main function
+#This inturn calls another dummy module dosomething else
+
 import logging
 logger = logging.getLogger('qlogging.dosomething')
 from dosomethingelse import subtract_numbers

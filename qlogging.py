@@ -1,3 +1,8 @@
+#This is the internal logging class.
+#An stderr handler is initiated by default.
+#Other methods are provided to customize handlers and formatters
+
+
 import logging
 
 # Create a custom logger
@@ -6,7 +11,7 @@ class qlogging():
     def __init__(self, process_name=__name__):
 
         """Initiate the Quotient logging module
-        Add a default handler that prints to stdout"""
+        Add a default handler that prints to stderr"""
 
         self.logger = logging.getLogger(process_name)
         self.logger.setLevel(logging.DEBUG)
