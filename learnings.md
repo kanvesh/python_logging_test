@@ -9,7 +9,6 @@
 
 * The above works for a mature API-like module which is called from other extension applications. But my use case is mainly to do with an _Application-level_ logger that is still under active development and also calls other smaller modules along the way -all with least amount of additional code.
 
-* Why don't I just log everything to stderr and write to a log file at the end? This prevents the need to pass a logger object, pre-configured to write to a file. 1) While in development it is easy to forget writing to stderr
-2) Seems like there is no easy command to write stderr to file? (from within IDE like Jupyter)
+* Why don't I just log everything to stderr and write to a log file at the end? This prevents the need to pass a logger object, pre-configured to write to a file. 1) While in development it is easy to forget writing to stderr. 2) Seems like there is no easy command to write stderr to file? (from within IDE like Jupyter)
 
 * Why not have a fixed logging configuration that is imported each time? Well, This config is stored in a central location and not customizable from within the project code, at least not easily. On the flipside, it carries the same issues as passing a logger object around. Only in this case, you are importing it from a central location instead of configuring it on the go.
