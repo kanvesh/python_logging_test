@@ -8,13 +8,16 @@ from logging.handlers import TimedRotatingFileHandler
 
 # Create a custom logger
 class qlogging():
+    #@abstractmethod
+    #def log_to_file(filename):
+        #logging = qlogging(filename)
 
-    def __init__(self, process_name=__name__):
+    def __init__(self):
 
         """Initiate the Quotient logging module
         Add a default handler that prints to stderr"""
 
-        self.logger = logging.getLogger(process_name)
+        self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
 
         # Create handlers
@@ -28,7 +31,7 @@ class qlogging():
         # Add handlers to the logger
         self.logger.addHandler(c_handler)
 
-        return None
+        #self.set_log_file(filename)
 
     def set_log_file(self, filename, loglevel = logging.DEBUG, output_format=logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')):
 
@@ -40,7 +43,8 @@ class qlogging():
         self.logger.addHandler(f_handler)
 
         return None
-    def set_level_display(self, level='DEBUG'):
+
+    def set_display_level(self, level='DEBUG'):
 
         """This function sets level of stderr that is displayed"""
 
@@ -60,12 +64,13 @@ class qlogging():
         self.logger.handlers[0].setLevel(loglevel)
 
 
-    def create_timed_rotating_log(self, path='temp.log'):
+    def set_rotating_log(self, path='temp.log', period='d', interval=1, output_format=logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')):
 
         """Creates a new log every day by default. Time period is changeable."""
 
-        time_handler = TimedRotatingFileHandler(path,
-                                           when="s",
-                                           interval=1,
-                                           backupCount=5)
-        self.logger.addHandler(time_handler)
+        timed_handler = TimedRotatingFileHandler(path,
+                                           when=period,
+                                           interval=interval,
+                                           backupCount=0)
+        timed_handler.setFormatter(output_format)
+        self.logger.addHandler(timed_handler)

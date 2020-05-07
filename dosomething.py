@@ -2,11 +2,11 @@
 #This inturn calls another dummy module dosomething else
 
 import logging
-logger = logging.getLogger('qlogging.dosomething')
+logger = logging.getLogger()
 from dosomethingelse import subtract_numbers
 
-if len(logger.parent.handlers)==0:
-    logging.basicConfig( level=logging.INFO,handlers=[logging.StreamHandler()])
+#if len(logger.parent.handlers)==0:
+    #logging.basicConfig( level=logging.INFO,handlers=[logging.StreamHandler()])
 
 class dosomething():
 
