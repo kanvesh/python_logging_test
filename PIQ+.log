@@ -1,0 +1,24 @@
+2020-05-07 10:52:56,086 - root - INFO - running main.py
+2020-05-07 10:52:56,087 - root - INFO - initiating dosomething module
+2020-05-07 10:52:56,087 - root - INFO - running add_numbers function
+2020-05-07 10:52:56,087 - root - INFO - 2,3
+2020-05-07 10:52:56,087 - root - INFO - running subtract_numbers function
+2020-05-07 10:52:56,087 - root - INFO - 2,3
+2020-05-07 10:57:08,610 - root - INFO - running main.py
+2020-05-07 10:57:08,613 - root - INFO - initiating dosomething module
+2020-05-07 10:57:08,613 - root - INFO - running add_numbers function
+2020-05-07 10:57:08,613 - root - INFO - 2,3
+2020-05-07 10:57:08,613 - root - INFO - running subtract_numbers function
+2020-05-07 10:57:08,613 - root - INFO - 2,3
+2020-05-07 10:57:10,962 - root - INFO - running main.py
+2020-05-07 10:57:10,962 - root - INFO - initiating dosomething module
+2020-05-07 10:57:10,962 - root - INFO - running add_numbers function
+2020-05-07 10:57:10,963 - root - INFO - 2,3
+2020-05-07 10:57:10,963 - root - INFO - running subtract_numbers function
+2020-05-07 10:57:10,963 - root - INFO - 2,3
+2020-05-07 10:57:19,794 - root - INFO - running main.py
+2020-05-07 10:57:19,795 - root - INFO - initiating dosomething module
+2020-05-07 10:57:19,795 - root - INFO - running add_numbers function
+2020-05-07 10:57:19,795 - root - INFO - 2,3
+2020-05-07 10:57:19,795 - root - INFO - running subtract_numbers function
+2020-05-07 10:57:19,795 - root - INFO - 2,3

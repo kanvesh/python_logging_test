@@ -3,8 +3,9 @@
 
 from qlogger import qlogger
 
-qlogger.set_level_display('WARNING')
-#qlogger.set_log_file('temp.log')
+qlogger.set_display_level('DEBUG')
+qlogger.set_log_file('temp.log')
+qlogger.set_rotating_log('PIQ+.log')
 logger = qlogger.logger
 
 logger.info('running main.py')
