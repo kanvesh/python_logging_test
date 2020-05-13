@@ -22,3 +22,9 @@
 2020-05-07 10:57:19,795 - root - INFO - 2,3
 2020-05-07 10:57:19,795 - root - INFO - running subtract_numbers function
 2020-05-07 10:57:19,795 - root - INFO - 2,3
+2020-05-08 01:09:56,592 - root - INFO - running main.py
+2020-05-08 01:09:56,595 - root - INFO - initiating dosomething module
+2020-05-08 01:09:56,595 - root - INFO - running add_numbers function
+2020-05-08 01:09:56,595 - root - INFO - 2,3
+2020-05-08 01:09:56,596 - root - INFO - running subtract_numbers function
+2020-05-08 01:09:56,596 - root - INFO - 2,3

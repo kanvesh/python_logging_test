@@ -6,7 +6,6 @@ import logging
 
 qlogger.set_display_level('INFO')
 qlogger.set_log_file('temp.log')
-qlogger.set_rotating_log('PIQ+.log')
 
 logger = qlogger.logger
 
